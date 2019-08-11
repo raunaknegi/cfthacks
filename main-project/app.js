@@ -66,43 +66,6 @@ app.get("/doc",function(req,res){
 app.get("/donations",function(req,res){
     res.render("Donations");
 })
-// app.get("/submit",function(req,res){
-//     res.write("/index.html");
-//         res.send();
-//     }else{
-//         console.log("err");
-//         res.send('Not Authenticated');
-//     }
-// });
-
-
-
-// app.post("/doc",function(req,res){
-//     // var e = Document.getElementById("Profession");
-//     // var strUser = e.options[e.selectedIndex].value;
-//     const user=new Cordona({
-//         username:req.body.Name,
-//         profession:"Doctor",
-//         email:req.body.email,
-//         password:req.body.psw
-//     });
-    
-    
-//     req.login(user,function(err){
-//         if(err){
-//             console.log(err);
-            
-//         }else{
-//             passport.authenticate("local")(req,res,function(){
-//                 user.save();
-//                 res.write("done");
-//                 res.send();
-//             });
-            
-//         }
-//     })
-    
-// });
 
 app.get("/internships",function(req,res){
     res.render("Intern");
