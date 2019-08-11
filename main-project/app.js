@@ -149,6 +149,7 @@ app.post("/login", function(req,res){
     req.login(new_user,function(err){
         if(err){
             console.log(err);
+            res.send("error. Please try again");
             
         }else{
             
@@ -162,6 +163,7 @@ app.post("/register",function(req,res){
     Cordona.register({username:req.body.Name,email:req.body.email,profession:req.body.profession},req.body.psw,function(err,user){
         if(err){
             console.log(err);
+            res.send("error. Please try again");
         }else{
             console.log("working");
                 if(req.body.profession==="Doctors"){
