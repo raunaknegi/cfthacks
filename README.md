@@ -11,7 +11,7 @@
 1. run mongod
 2. use port localhost:27017
 
-##Open another terminal for mood-pixels repo
+## Open a new terminal for mood-pixels project
 
 1. npm init
 2. npm install
